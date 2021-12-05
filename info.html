@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="nomalize.css">
+    <title>Write your fullname here</title>
+</head>
+<body>
+    <header>
+    <nav class="navbar">
+        <div class="logo">
+            Logo
+        </div>
+        <ul class="nav-links">
+            <div class="links">
+                <li><a href="honesty.html">Honesty</a></li>
+                <li><a href="info.html">Info</a></li>
+                <li><a href="reflection.html">Reflection</a></li>
+            </div>
+        </ul>
+    </nav>
+    </header>
+    <div class="container">
+        <div class="row">
+            <div class="col-4">
+                <aside>
+                    <div class="error" id="firstnameErr"></div>
+                    <div class="error" id="lastnameErr"></div>
+                    <div class="error" id="passwordErr"></div>
+                    <div class="error" id="passwordconfErr"></div>
+                    <div class="error" id="usernameErr"></div>
+                    <div class="error" id="educationErr"></div>
+                    <div class="error" id="emailErr"></div>
+                    <div class="error" id="ageErr"></div>
+                </aside>
+            </div>
+            <div class="col-8">
+                <form class="signup" onsubmit="return validateForm()" name="signup" action="https://httpbin.org/post" method="post">
+                    <div class="row">
+                      <div class="col-4">
+                        <label for="firstname">First Name</label>
+                      </div>
+                      <div class="col-8">
+                        <input type="text" id="firstname" name="firstname" placeholder="Your first name">
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="col-4">
+                        <label for="lastname">Last Name</label>
+                      </div>
+                      <div class="col-8">
+                        <input type="text" id="lastname" name="lastname" placeholder="Your last name">
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="col-4">
+                        <label for="password">Password</label>
+                      </div>
+                      <div class="col-8">
+                        <input type="password" id="password" name="password" placeholder="Password">
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="col-4">
+                        <label for="passwordconf">Confirm Password</label>
+                      </div>
+                      <div class="col-8">
+                        <input type="password" id="passwordconf" name="passwordconf" placeholder="Password Confirm">
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="col-4">
+                        <label for="username">Username</label>
+                      </div>
+                      <div class="col-8">
+                        <input type="text" id="username" name="username" placeholder="Username">
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="col-4">
+                        <label for="username">Education status</label>
+                      </div>
+                      <div class="col-8">
+                        <input type="radio" id="username" name="education" value="Graduated" placeholder="Username">
+                        <label for="educationstatus">Graduated</label>
+                        <input type="radio" id="username" name="education" value="Current enrolled" placeholder="Username">
+                        <label for="educationstatus">Current enrolled</label>
+                        <input type="radio" id="username" name="education" value="Did not graduate" placeholder="Username">
+                        <label for="educationstatus">Did not graduate</label>
+                      </div>
+          
+                    </div>
+                    <div class="row">
+                        <div class="col-4">
+                          <label for="email">Email</label>
+                        </div>
+                        <div class="col-8">
+                          <input type="email" id="email" name="email" placeholder="Enter your email" required   >
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-4">
+                          <label for="age">Age</label>
+                        </div>
+                        <div class="col-8">
+                          <input type="number" id="age" name="age" placeholder="Must be between 18 and 60">
+                        </div>
+                    </div>
+                    <input type="hidden" name="lastName" id="lastName" value="Your last name goes here">
+                    <input type="hidden" name="studentId" id="studentId" value="Your student id goes here">
+                    <br>
+                    <div class="row">
+                      <input type="submit" value="Submit">
+                      <input type="button" value="Reset">
+                    </div>
+                  </form>
+            </div>
+        </div>
+      </div>
+      
+      
+
+    <footer>
+        <p>Copyright @2021</p>
+    </footer>
+    <script src="info.js"></script>
+</body>
+</html>

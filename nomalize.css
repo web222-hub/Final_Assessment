@@ -1,0 +1,152 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    border: none;
+}
+
+body{
+    font-family: cursive;
+    background-color: #eee;
+}
+
+a{
+    text-decoration: none;
+}
+
+li{
+    list-style: none;
+}
+
+.navbar{
+    border: 1px #000 solid;
+    border-radius: 10px;
+    margin: 1% 1%;
+    display: flex;
+    align-items: center;
+    padding: 21px;
+    justify-content: space-between;
+    background-color: teal;
+    color: #fff;
+}
+.nav-links a{
+    color: #fff;
+}
+.logo{
+    font-size: 30px;
+}
+.links{
+    display: flex;
+    gap: 1em;
+    font-size: 18px;
+}
+.links li:hover{
+    background-color: #000;
+    transition: 0.5s ease-in;
+    
+}
+.links li{
+    padding: 10px 15px;
+}
+/* content for each page */
+.content{
+    line-height: 30px;
+    font-size: 16px;
+    margin: 5% 5%;
+}
+
+
+/* info page */
+
+.container {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;
+  }
+  .col-4 {
+    float: left;
+    width: 25%;
+    margin-top: 6px;
+  }
+  
+  .col-8 {
+    float: left;
+    width: 75%;
+    margin-top: 6px;
+  }
+  
+  /* Clear floats after the columns */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+
+  input[type=text],input[type=email], input[type=number],input[type=password], select, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    resize: vertical;
+  }
+  
+  label {
+    padding: 12px 12px 12px 0;
+    display: inline-block;
+  }
+  input[type=submit]  {
+    background-color: #101312;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    float: right;
+  }
+  input[type=button]  {
+    background-color: blue;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    float: left;
+  }
+  input[type=submit]:hover {
+    background-color: #45a049;
+  }
+  
+
+  form{
+      border-left: 1px solid #000;
+      padding-left: 30px;
+  }
+
+
+  .error{
+      line-height: 55px;
+      color: red;
+  }
+
+
+
+
+
+h3{
+    text-decoration: underline;
+    text-align: center;
+}
+
+
+footer{
+    margin-top: 2rem;
+    font-size: 2rem;
+    padding: 2.5rem;
+    text-align: center;
+    color: #fff;
+    background-color: teal;
+    margin: 1% 1%;
+    border: #000 solid 1px;
+    border-radius: 10px;
+}
